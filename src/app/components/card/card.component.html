@@ -1,0 +1,5 @@
+<div class="card-body d-flex flex-column align-items-start">
+  <h3 class="card-title ">{{getCount(cardType)}}</h3>
+  <p class="card-text">{{cardType | titlecase}}</p>
+  <app-button [label]="'See all'" class="align-self-center w-50" (click)="goToUrl('navigator')"></app-button>
+</div>

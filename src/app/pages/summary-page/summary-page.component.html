@@ -1,0 +1,11 @@
+<div class="container text-center d-flex flex-column py-4" style="gap: 10px">
+
+  <h1>{{title | titlecase}}</h1>
+
+  <app-summary-card></app-summary-card>
+
+  <div class="d-flex flex-wrap justify-content-between" style="gap: 5px;">
+    <app-card *ngFor="let type of types" [cardType]="type" class="card" style="min-width: calc(50% - 5px);">
+    </app-card>
+  </div>
+</div>
